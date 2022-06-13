@@ -2,7 +2,8 @@ version: '2'
 
 services:
   grafana:
-    image: docker.io/bitnami/grafana:8
+    build: .
+    #image: jondkelley/grafana:kuma_833
     ports:
       - '3000:3000'
     environment:
